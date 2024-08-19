@@ -3,12 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G3-ARCHITECHS-PROJECT</title>
+    <title>G3 Architects project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="work-sans-font">
-    <header></header>
-    <main></main>
+<body>
+    <header>
+        <nav >
+            <h1>G3 Architects</h1>
+            <ul>
+                <li><a class="a" href="">Home</a></li>
+                <li><a class="a" href="">About</a></li>
+                <li><a class="a" href="">Contact Us</a></li>
+                <li><a class="a" href="">Login</a></li>
+            </ul>
+
+            <div class="toggle-btn"><i class="ri-menu-add-line"></i></div>
+        </nav>
+
+        <div class="dropdown-menu">
+            <a class="a" href="">Home</a>
+            <a class="a"  href="">About</a>
+            <a class="a" href="">Contact</a>
+            <a class="a" href="">Login</a>
+        </div>
+
+        <script>
+            const toggleBtn =document.querySelector('.toggle-btn')
+            const toggleBtnIcon =document.querySelector('.toggle-btn i')
+            const dropDownMenu =document.querySelector('.dropdown-menu')
+            
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+        
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-Xmark'
+                : 'fa-solid fa-bars'
+            }
+        
+        </script>
+        
+        
+
+        <!-- <div class="header-2"> -->
+            <!-- <h2>Brand New <br> Group of Architects</h2> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sapiente minus eum eaque libero cumque,  <br> qui nam. Minus molestiae iste, voluptatibus reprehenderit id incidunt, molestias libero, doloribus placeat repellendus facilis! </p> -->
+            <!-- <button class="btn">Explore More</button> -->
+        </div>
+         <!-- <div class="header-image"> -->
+        <!-- <img class="image" src="./images/banner.png" alt=""> -->
+
+    <!-- </div> -->
+    <!-- </header> -->
+
+    <!-- header end here -->
+
+    <!-- main start here -->
+
+    <!-- <main> -->
+        <!-- main first start 
+         <div class="main-1st">
+            <!-- main first div left -->
+             <!-- <div class="main-1st-left"> -->
+                <!-- <img class="main-1st-img" id="img1" src="./images/team1.png" alt=""> -->
+                <!-- <img class="main-1st-img" id="img2" src="./images/team2.png" alt=""> -->
+                <!-- <img class="main-1st-img" id="img3" src="./images/team3.png" alt=""> -->
+                <!-- <img class="main-1st-img" id="img4" src="./images/team4.png" alt=""> -->
+
+             <!-- </div> -->
+             <!-- main first div left end -->
+
+             <!-- main first div right -->
+
+             <!-- <div class="main-1st-right"> <h1><span id="mfdrs-1">Quick List</span> <span id="mfdrs-2">of Our </span> <br><span id="mfdrs-3">Features</span></h1> -->
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est deleniti hic facere perferendis assumenda in repudiandae quaerat </p> -->
+
+                <!-- <button class="btn-1">Explore more</button> -->
+             <!-- </div> -->
+             
+
+
+
+
+
+
+         <!-- </div> -->
+         <!-- main first end -->
+
+    </main>
     <footer></footer>
     
 </body>
